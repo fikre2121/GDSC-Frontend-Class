@@ -1,0 +1,43 @@
+body{
+    padding:0 ;
+    margin:0 ;
+    width: 100%;
+    display: block;
+}
+nav{
+    background-color:royalblue;
+    text-align: center;
+    padding:5px;
+}
+.topper{
+    width: 100%;
+}
+.inner-div{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    gap: 10px;
+}
+.center{
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
+}
+.lower-div{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 20px;
+}
+footer{
+    width: 100%;
+    text-align: center;
+    background-color: royalblue;
+    padding: 10px;
+    margin: 5px;
+}
+.inner-div .text-container
+{
+    padding: 110px;
+    background-color: crimson;
+}
