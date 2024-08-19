@@ -3,47 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <title>Dom Manipulation</title>
+    <style>
+        body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e0e0e0;
+}
+
+.container {
+    display: flex;
+    background-color: rgb(27, 36, 74);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+}
+
+.column {
+    color: white;
+    margin: 0 20px;
+    text-align: center;
+}
+
+.counter {
+    background-color: black;
+    color: Red;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 24px;
+    border-radius: 5px;
+}
+
+.buttons button {
+    color: white;
+    background-color: rgb(27, 36, 74);
+    padding: 10px 15px;
+    margin: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    </style>
 </head>
 <body>
-    <header>
-        <h1>BIRDWACHING</h1>
-        <nav>
-            <ul>
-                <a href="#">Home</a>
-                <a href="#">Get Started</a>
-                <a href="#">Photos</a>
-                <a href="#">Gear</a>
-                <a href="#">Forum</a>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <table>
-            <tr>
-                <td>
-                    <article>
-                        <h2>WELCOME</h2>
-                        <p>Welcome to our fake birdwatching site. ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aut nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est.</p>
-                        <br>
-                            <p>so dont wast time!get what you need, the turn off that computer and get out in to the great outdoors!</p>
-                    </article>
-                </td>
-                <td>
-                    <aside>
-                        <h3>FAVORITE PHOTOS</h3>
-                        <img src="image1.jpg" alt="Image 1">
-                        <img src="image2.jpg" alt="Image 2">
-                        <img src="image3.jpg" alt="Image 3">
-                    </aside>
-                </td>
-            </tr>
-        </table>
-    </main>
-    <footer>
-        <p>The fake website example is CCO. Lorem ipsum dolor sit amet consectetur adipisicing elit. At nobis, impedit praesentium consectetur tenetur nihil.</p>
-        <a href="#">Dive Icon</a>
-        bylorc.
-    </footer>
+    <div class="container">
+        <div class="column">
+            <h2>Home</h2>
+            <div class="counter" id="home-counter">0</div>
+            <div class="buttons">
+                <button onclick="increment('home', 1)">+1</button>
+                <button onclick="increment('home', 2)">+2</button>
+                <button onclick="increment('home', 3)">+3</button>
+            </div>
+        </div>
+        <div class="column">
+            <h2>Guest</h2>
+            <div class="counter" id="guest-counter">0</div>
+            <div class="buttons">
+                <button onclick="increment('guest', 1)">+1</button>
+                <button onclick="increment('guest', 2)">+2</button>
+                <button onclick="increment('guest', 3)">+3</button>
+            </div>
+        </div>
+    </div>
+  
+    <script src="script.js"></script>
 </body>
-</html>
