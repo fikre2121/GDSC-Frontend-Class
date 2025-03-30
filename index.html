@@ -1,76 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dom Manipulation</title>
     <style>
-        body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #e0e0e0;
-}
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #e0e0e0;
+      }
 
-.container {
-    display: flex;
-    background-color: rgb(27, 36, 74);
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 500px;
-}
+      .container {
+        display: flex;
+        background-color: rgb(27, 36, 74);
+        padding: 20px;
+        border-radius: 10px;
+        max-width: 500px;
+      }
 
-.column {
-    color: white;
-    margin: 0 20px;
-    text-align: center;
-}
+      .column {
+        color: white;
+        margin: 0 20px;
+        text-align: center;
+      }
 
-.counter {
-    background-color: black;
-    color: Red;
-    padding: 10px;
-    margin: 10px 0;
-    font-size: 24px;
-    border-radius: 5px;
-}
+      .counter {
+        background-color: black;
+        color: Red;
+        padding: 10px;
+        margin: 10px 0;
+        font-size: 24px;
+        border-radius: 5px;
+      }
 
-.buttons button {
-    color: white;
-    background-color: rgb(27, 36, 74);
-    padding: 10px 15px;
-    margin: 5px;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
+      .buttons button {
+        color: white;
+        background-color: rgb(27, 36, 74);
+        padding: 10px 15px;
+        margin: 5px;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .formm {
+        width: 89%;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+      }
+      .formm input {
+        padding: 15px;
+        margin-bottom: 10px;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="column">
-            <h2>Home</h2>
-            <div class="counter" id="home-counter">0</div>
-            <div class="buttons">
-                <button onclick="increment('home', 1)">+1</button>
-                <button onclick="increment('home', 2)">+2</button>
-                <button onclick="increment('home', 3)">+3</button>
-            </div>
+      <div class="column">
+        <h2>Home</h2>
+        <div class="counter" id="home-counter">0</div>
+        <div class="buttons">
+          <button onclick="increment('home', 1)">+1</button>
+          <button onclick="increment('home', 2)">+2</button>
+          <button onclick="increment('home', 3)">+3</button>
         </div>
-        <div class="column">
-            <h2>Guest</h2>
-            <div class="counter" id="guest-counter">0</div>
-            <div class="buttons">
-                <button onclick="increment('guest', 1)">+1</button>
-                <button onclick="increment('guest', 2)">+2</button>
-                <button onclick="increment('guest', 3)">+3</button>
-            </div>
+      </div>
+      <div class="column">
+        <h2>Guest</h2>
+        <div class="counter" id="guest-counter">0</div>
+        <div class="buttons">
+          <button onclick="increment('guest', 1)">+1</button>
+          <button onclick="increment('guest', 2)">+2</button>
+          <button onclick="increment('guest', 3)">+3</button>
         </div>
+      </div>
     </div>
-  
+    <form action="" class="formm">
+      first name <input type="text" /> second name <input type="text" /> last
+      name <input type="text" />
+      <p>fikre</p>you dont leap over the follwing 
+    </form>
     <script src="script.js"></script>
-</body>
+  </body>
+</html>
